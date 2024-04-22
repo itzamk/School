@@ -1,0 +1,21 @@
+Student ID,first name,last name,email id,Major
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science
+7001,John,Doe,johndoe@email.com,Computer Science

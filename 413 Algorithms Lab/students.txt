@@ -1,0 +1,21 @@
+Student ID,first name,last name,email id,Major
+7001,John,Doe,johndoe@email.com,Computer Science
+1042,Jane,Smith,janesmith@email.com,Mathematics
+1204,Robert,Brown,robertbrown@email.com,Physics
+1004,Linda,Johnson,lindajohnson@email.com,Chemistry
+1075,Michael,Williams,michaelwilliams@email.com,Biology
+1506,Elizabeth,Jones,elizabethjones@email.com,History
+1007,James,Miller,jamesmiller@email.com,Geography
+1008,Jennifer,Davis,jenniferdavis@email.com,English
+2089,William,Garcia,williamgarcia@email.com,Philosophy
+5010,Patricia,Rodriguez,patriciarodriguez@email.com,Psychology
+0451,David,Martinez,davidmartinez@email.com,Engineering
+1012,Mary,Hernandez,maryhernandez@email.com,Art
+1423,Joseph,Lopez,josephlopez@email.com,Music
+1014,Barbara,Gonzalez,barbaragonzalez@email.com,Theatre
+1015,Thomas,Anderson,thomasanderson@email.com,Medicine
+1016,Susan,Wilson,susanwilson@email.com,Pharmacy
+2017,Charles,Taylor,charlestaylor@email.com,Law
+1018,Margaret,Moore,margaretmoore@email.com,Architecture
+2019,Andrew,White,andrewwhite@email.com,Design
+1020,Sarah,Lee,sarahlee@email.com,Journalism

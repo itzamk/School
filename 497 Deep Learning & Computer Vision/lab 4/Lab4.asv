@@ -1,0 +1,58 @@
+%{
+Andrew Kozempel
+CMPSC 497
+Fall 2023
+LAB #4: Color Tracking with Webcam
+%}
+
+cam = webcam;
+
+% define figure for later
+figure;
+
+for i = 1:200
+
+    % get image from video.
+    RGB = snapshot(cam);
+    fprintf('\nImage %d: ', i);
+    fprintf('\nSize: %d x %d', size(RGB, 1), size(RGB, 2));
+    
+    % split into R, G, B planes
+    r = RGB(:, :, 1);
+    g = RGB(:, :, 2);
+    b = RGB(:, :, 3);
+    
+    % create binary mask for red objects
+    redMask = (r > 2*g) & (r > 2*b) & (r > 30);
+    
+    % apply morphological closing
+    se = strel('disk', 35);
+    redClosed = imclose(redMask, se);
+    
+    % remove small objects
+    redObjects = bwareaopen(redClosed, 35);
+    
+    % properties of labeled regions
+    properties = regionprops(bwlabel(redObjects), 'Centroid', 'BoundingBox', 'Area');
+    
+    % If red objects were detected
+    if ~isempty(properties)
+        % Find the largest red object
+        [~, idx] = max([properties.Area]);
+        bbox = properties(idx).BoundingBox;
+        centroid = properties(idx).Centroid;
+        
+        % Overlay the bounding box and centroid on the original image
+        rgbImage = insertShape(rgbImage, 'Rectangle', bbox, 'Color', 'blue', 'LineWidth', 5);
+        rgbImage = insertMarker(rgbImage, centroid, '*', 'Size', 5, 'Color', 'green');
+    end
+    
+    % Display the processed image
+    imshow(rgbImage);
+    title('Processed Image');
+
+    drawnow; % Update the figure window
+end
+
+% release the webcam after processing
+clear cam;
